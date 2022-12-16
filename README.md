@@ -1,1 +1,1 @@
-# handson-ecs-cicd-repository
+# handsonuser-ecsdemo-frontend
