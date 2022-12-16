@@ -46,7 +46,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "449974608116.dkr.ecr.ap-northeast-1.amazonaws.com/devday2019-ecsdemo-frontend:latest",
+      "image": <IMAGE1_NAME>,
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
