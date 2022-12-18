@@ -10,12 +10,12 @@ phases:
   build:
     commands:
       - docker build -t ${IMAGE_NAME} .
-      - docker tag ${IMAGE_NAME}:latest ${REPOSITORY_URI}/${IMAGE_NAME}:latest
+#      - docker tag ${IMAGE_NAME}:latest ${REPOSITORY_URI}/${IMAGE_NAME}:latest
       - docker tag ${IMAGE_NAME}:latest ${REPOSITORY_URI}/${IMAGE_NAME}:${IMAGE_TAG}
 
   post_build:
     commands:
-      - docker push ${REPOSITORY_URI}/${IMAGE_NAME}:latest
+#      - docker push ${REPOSITORY_URI}/${IMAGE_NAME}:latest
       - docker push ${REPOSITORY_URI}/${IMAGE_NAME}:${IMAGE_TAG}
       - printf '{"Version":"1.0","ImageURI":"%s"}' ${REPOSITORY_URI}/${IMAGE_NAME}:${IMAGE_TAG} > imageDetail.json
 
